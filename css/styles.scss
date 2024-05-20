@@ -28,7 +28,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 .forside {
-	height: 720px;
 	width: 100%;
 	height: 100vh;
 	/*Dette sikrer at classen "forside" fylder hele browser vinduet, vh er relativt til % af højden på viewporten*/
@@ -43,14 +42,25 @@ footer {
 
 .titler{
 	color: #ffffff;
-	text-align: center;
 	background-color: rgba(0, 0, 0, 0.397);
 	width: 80%;
 	height: 80%;
 }
+.overskrifter{
+	text-align: center;
+}
 .indhold{
 	width: 100%;
 	height: 100%;
-	padding: 20px;
+	padding: auto;
+}
+.knapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.knapper button{
+	margin: 10px;
 }
 
