@@ -13,6 +13,7 @@ $custom-colors: (
 	"farve": $cyan-400,
 );
 
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrapComponents";
@@ -29,8 +30,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	background-position: center;
 }
 
-.forsidenav, .mobilnav {
-	background-color: rgba(0, 0, 0, 0.637);
+.forsidenav a {
+	color: #fff;
 }
 
 
