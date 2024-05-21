@@ -12,6 +12,7 @@ $link-decoration: none;
 $custom-colors: (
 	"farve": $cyan-400,
 );
+$nav-link-color:($dark);
 
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -19,7 +20,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
-
 
 
 
@@ -142,4 +142,9 @@ footer {
 .contentpages{
 background-color: #fff;
 
+
+}
+.nav-link{
+	height: 51px;
+	margin-top: 10px;
 }

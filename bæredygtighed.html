@@ -19,16 +19,17 @@
 <body class="contentpages">
 
     <!--Navbar til mobil og media queries sm og ned-->
-    <nav class="mobilnav navbar navbar-dark">
+    <nav class="mobilnav navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="widelogo" src="pics/padi-logo-white-wide.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img class="widelogo" src="pics/padi_logo_black.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            <div class="offcanvas offcanvas-end text-bg-dark navbar-dark" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
+                <!--Tilføjet "navbar-dark for at gøre linkteksten synlig på mørk baggrund"-->
                 <div class="offcanvas-header">
                     <img class="widelogo" src="pics/padi-logo-white-wide.png" alt="">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
@@ -62,10 +63,10 @@
         </div>
     </nav>
 
-    <nav class="">
-        <ul class="contentnav nav nav-underline nav-justified align-items-center">
+    <nav>
+        <ul class="contentnav nav nav-underline nav-fill align-items-center">
             <li class="nav-item">
-                <a class="nav-link active" href="#"><img class="logo" src="pics/padi-logo.png" alt=""></a>
+                <a class="nav-link active" href="#"><img class="widelogo" src="pics/padi_logo_black.png" alt=""></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Active</a>
@@ -92,7 +93,7 @@
         </ul>
     </nav>
 
-    <div class="photocontainer d-flex align-items-center">
+    <div class="photocontainer d-flex align-items-center mt-3">
         <img src="pics/contentphoto1wide1.jpeg" alt="">
         <div class="contenttitel" >
             <h1>Take action</h1>
