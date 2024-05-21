@@ -20,12 +20,33 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // 5. Du kan lave styling her...
 
 
+
+
 #landing {
-	background-image: url("/pics/dive1.jpeg") ;
-	background-size:cover;
+	background-image: url("/pics/dive1.jpeg");
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+.forsidenav, .mobilnav {
+	background-color: rgba(0, 0, 0, 0.637);
+}
+
+
+.forsidenav{
+	display: none;
+}
+
+@include media-breakpoint-up(md){
+	.forsidenav{
+		display: flex;
+	}
+	.mobilnav{
+		display: none;
+	}
+}
+
 
 .forside {
 	width: 100%;
@@ -35,32 +56,59 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 footer {
-	background-color: white;
+	background-color: rgba(0, 0, 0, 0.637);
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
-/*Dette skaber en transparent sort boks, samt gør titlerne hvide og centrere teksten */
 
-.titler{
+@include media-breakpoint-up(sm) { 
+	footer{
+		grid-template-columns: 6fr 6fr;
+	}
+}
+
+@include media-breakpoint-up(md){
+	footer{
+		grid-template-columns: 4fr 4fr 4fr;
+	}
+}
+@include media-breakpoint-up(lg) { 
+	footer{
+		grid-template-columns: 3fr 3fr 3fr 3fr;
+	}
+}
+
+.footerrække {
+	display: grid;
+	grid-template-rows: 1fr;
+	margin: 50px;
+}
+
+/*Dette skaber en transparent sort boks, samt gør titlerne hvide */
+
+.titler {
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 0.397);
-	width: 80%;
-	height: 80%;
+	height: 100%;
+	width: 100%;
+
 }
-.overskrifter{
+
+.overskrifter {
 	text-align: center;
 }
-.indhold{
+
+.indhold {
 	width: 100%;
 	height: 100%;
-	padding: auto;
+	padding: 10px;
 }
-.knapper{
+
+.knapper {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
-.knapper button{
-	margin: 10px;
-}
-
+.knapper button {}
