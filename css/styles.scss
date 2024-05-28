@@ -3,6 +3,7 @@
 
 // 2. Include any default variable overrides here
 $link-decoration: none;
+$primary:#0474C5;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -12,6 +13,8 @@ $link-decoration: none;
 $custom-colors: (
 	"farve": $cyan-400,
 );
+
+
 $nav-link-color:($dark);
 
 
