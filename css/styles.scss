@@ -218,8 +218,9 @@ background-color: #fff;
 }
 @include media-breakpoint-up(lg){
 	.imagenav img{
-		width: 80%;
+		width: 100%;
 	}
+	
 }
 .imagenav{
 	margin: 10px;
@@ -227,6 +228,7 @@ background-color: #fff;
 	flex-direction: column;
 	align-items: center;
 }
+
 .content{
 	display: grid;
 	grid-template-columns: 1fr;
