@@ -81,21 +81,25 @@ footer {
 
 .footer{
 	display: grid;
-	grid-template-rows: 8fr 4fr;
+	grid-template-rows: 6fr 4fr;
 }
 
 .idapfooter{
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 6fr 6fr;
+	order: 1;
 }
 
 
-@include media-breakpoint-up(md){
-	// .footer{
-	// 	grid-template-columns: 4fr 2fr 2fr 4fr;
-	// }
+@include media-breakpoint-up(lg){
+	.footer{
+		grid-template-columns: 4fr 4fr 4fr;
+		grid-template-rows: 1fr;
+	}
 	.idapfooter{
-		flex-direction: column;
+		grid-template-columns: 1fr;
+		order: 0;
+		padding-right: 40px;
 	}
 }
 
@@ -109,6 +113,9 @@ footer {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+
+
+
 /*Dette skaber en transparent sort boks, samt gør titlerne hvide */
 
 .titler {
@@ -226,12 +233,7 @@ background-color: #fff;
 	column-gap: 20px;
 	margin-bottom: 60px;
 }
-.content{
-	display: grid;
-	grid-template-columns: 1fr;
-	column-gap: 20px;
-	margin-bottom: 60px;
-}
+
 @include media-breakpoint-up(lg){
 	.content{
 		grid-template-columns: 6fr 6fr;
@@ -295,4 +297,25 @@ background-color: #fff;
 }
 .footerlogo img{
 	width: 100%;
+}
+.footerinput{
+	display: none;
+	
+}
+.footernyhed{
+	display: none;
+}
+
+
+@include media-breakpoint-up(lg){
+	.footernyhed{
+		display: grid;
+	}
+	.footerinput{
+		display: grid;
+		grid-template-columns: 5fr 1fr;
+	}
+	.footerrækker{
+		padding-left: 50px;
+	}
 }
