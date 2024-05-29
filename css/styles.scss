@@ -180,3 +180,40 @@ background-color: #fff;
 		padding-top: 100px;
 	}
 }
+.photonav{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.left, .right{
+	display: none;
+}
+#newsletter{
+	display: none;
+	
+}
+@include media-breakpoint-up(md){
+	.photonav{
+		
+		grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+	}
+	.left, .right{
+		display: block;
+	}
+	#newsletter{
+		display: flex;
+	}
+}
+.imagenav img{
+	width: 100%;
+}
+@include media-breakpoint-up(lg){
+	.imagenav img{
+		width: 80%;
+	}
+}
+.imagenav{
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
