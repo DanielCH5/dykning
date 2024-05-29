@@ -77,34 +77,38 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 footer {
 	background-color: #004578;
+}
+
+.footer{
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-rows: 8fr 4fr;
 }
 
-
-@include media-breakpoint-up(sm) { 
-	footer{
-		grid-template-columns: 6fr 6fr;
-	}
+.idapfooter{
+	display: flex;
+	flex-direction: row;
 }
+
 
 @include media-breakpoint-up(md){
-	footer{
-		grid-template-columns: 4fr 4fr 4fr;
-	}
-}
-@include media-breakpoint-up(lg) { 
-	footer{
-		grid-template-columns: 3fr 3fr 3fr 3fr;
+	// .footer{
+	// 	grid-template-columns: 4fr 2fr 2fr 4fr;
+	// }
+	.idapfooter{
+		flex-direction: column;
 	}
 }
 
-.footerrække {
+
+.footerrækker {
 	display: grid;
-	grid-template-rows: 1fr;
-	margin: 50px;
+	grid-template-columns: 1fr 1fr;
+	
 }
-
+.footerrække{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 /*Dette skaber en transparent sort boks, samt gør titlerne hvide */
 
 .titler {
@@ -289,4 +293,6 @@ background-color: #fff;
 		order:0;
 	}
 }
-
+.footerlogo img{
+	width: 100%;
+}
