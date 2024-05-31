@@ -10,15 +10,14 @@ $primary:#004578;
 @import "../node_modules/bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
-$custom-colors: (
-	"farve": $cyan-400,
-);
+
 
 
 $nav-link-color:($dark);
 
 
-$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$nav-underline-link-active-color:($primary);
 
 @import "bootstrapComponents";
 
@@ -162,6 +161,11 @@ footer {
 .photocontainer img{
 	width: 100%;
 	z-index: 0;
+}
+@include media-breakpoint-up(lg){
+	.photocontainer{
+		margin-top: 10px;
+	}
 }
 .contenttitel{
 	position: absolute;
