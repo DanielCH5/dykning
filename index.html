@@ -15,54 +15,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body id="landing">
-
-	<!--Nav bar til desktop og media query md og op-->
-	<nav class="navbar-dark">
-		<ul class="forsidenav nav nav-underline nav-fill align-items-center fixed-top" data-bs-theme="dark">
-			<li class="nav-item">
-				<a class="brand nav-link active" href="index.html"><img class="widelogo" src="pics/padi-logo-white-wide.png"
-						alt=""></a>
-			</li>
-			<li class="nav-item">
-				<a class="link1 nav-link" href="bæredygtighed.html">Bæredygtighed</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="link1 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-					aria-expanded="false">
-					Samarbejdspartnere
-				</a>
-				<ul class="dropdown-menu dropdown-menu-dark">
-					<li><a class="dropdown-item" href="#">PADI</a></li>
-					<li><a class="dropdown-item" href="#">Ocean Bottle</a></li>
-					<li>
-						<hr class="dropdown-divider">
-					</li>
-					<li><a class="dropdown-item" href="#">Something else here</a></li>
-				</ul>
-			</li>
-			<li class="nav-item">
-				<a class="link1 nav-link" href="#">Kurser</a>
-			</li>
-			<li class="nav-item">
-				<a class="link1 nav-link" href="#">Om IDAP</a>
-			</li>
-		</ul>
-	</nav>
+<body>
 
 	<!--Navbar til mobil og media queries sm og ned-->
-	<nav class="mobilnav navbar navbar-dark fixed-top">
+	<nav class="mobilnav navbar">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img class="widelogo" src="pics/idap-logo-white.png" alt=""></a>
+			<a class="navbar-brand" href="index.html"><img class="widelogo" src="pics/idap-logo-black.png" alt=""></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
 				data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+			<div class="offcanvas offcanvas-end text-bg-dark navbar-dark" tabindex="-1" id="offcanvasDarkNavbar"
 				aria-labelledby="offcanvasDarkNavbarLabel">
+				<!--Tilføjet "navbar-dark for at gøre linkteksten synlig på mørk baggrund"-->
 				<div class="offcanvas-header">
-					<img class="widelogo" id="offcanvasDarkNavbarLabel" src="pics/idap-logo-white.png" alt="">
+					<img class="widelogo" src="pics/idap-logo-white.png" alt="">
 					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
 						aria-label="Close"></button>
 				</div>
@@ -71,22 +39,23 @@
 						<li class="nav-item">
 							<a class="nav-link" href="bæredygtighed.html">Bæredygtighed</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page"
+								href="samarbejdspartnere.html">Samarbejdspartnere</a>
+						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
-								Samarbejdspartnere
+								Kurser
 							</a>
 							<ul class="dropdown-menu dropdown-menu-dark">
-								<li><a class="dropdown-item" href="#">PADI</a></li>
+								<li><a class="dropdown-item" href="padi.html">PADI</a></li>
 								<li><a class="dropdown-item" href="#">Ocean Bottle</a></li>
 								<li>
 									<hr class="dropdown-divider">
 								</li>
 								<li><a class="dropdown-item" href="#">Something else here</a></li>
 							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">Kurser</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="#">Om IDAP</a>
@@ -96,63 +65,119 @@
 			</div>
 		</div>
 	</nav>
+	<!-- desktopnav -->
+	<nav>
+		<ul class="contentnav nav nav-underline nav-fill align-items-center">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html"><img class="widelogo" src="pics/idap-logo-black.png" alt=""></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="bæredygtighed.html">Bæredygtighed</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="samarbejdspartnere.html">Samarbejdspartnere</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+					aria-expanded="false">
+					Kurser
+				</a>
+				<ul class="dropdown-menu dropdown-menu-dark">
+					<li><a class="dropdown-item" href="padi.html">PADI</a></li>
+					<li><a class="dropdown-item" href="#">Ocean Bottle</a></li>
+					<li>
+						<hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Om IDAP</a>
+			</li>
+		</ul>
+	</nav>
 
 
-
-
-	<div class="forside1">
-		<div class="forside container">
-			<div class="titler">
-				<div class="indhold d-flex flex-column justify-content-center">
-					<div class="overskrifter">
-						<h1>Dykkere for bæredygtighed</h1>
-						<h5 class="mt-4">Skildpadderne svømmer i skrald, støt dem i kampen mod forureningen før det er
-							for sent</h5>
-
-					</div>
-					<div class="knapper mt-4">
-						<button class="btn btn-primary">Sign up</button>
-
-					</div>
+	<div class="landing">
+		<div class="landingcontent container">
+			<div class="landingtitler" >
+				<div>
+				<h1>International Divers against Pollution</h1>
+				<h5>Alt for meget af vores plastik ender i havene, og siden det ikke umiddelbart nedbrydes, bliver det
+					et
+					større problem dag for dag på hele kloden.
+					<br><br>
+					Hos IDAP, forsøger vi at bringe større fokus på hvad I som dykkere kan gøre for at fremme
+					bæredygtigheden og hjælpe kloden i forbindelse med jeres dyk.</h5>
+				</div>
+				<div class="knapper">
+					<button class="btn btn-primary">Test</button>
+					<div class="left"></div>
+					<div class="right"></div>
 				</div>
 			</div>
-
-			<div class="recycle d-flex flex-column justify-content-center align-items-center">
-				<img src="pics/Recycle.png" alt="">
+			<div class="plads"></div>
+			<div class="landingbillede">
+				<img src="pics/saveouroceans.png" alt="">
 			</div>
 		</div>
-
 	</div>
 
 
-	<footer data-bs-theme="dark">
 
-		<div class="footerrække">
-			<a href="">Test</a>
-			<a href="">Test</a>
-			<a href="">Test</a>
-			<a href="">Test</a>
-		</div>
 
-		<div class="footerrække">
-			<a href="">Test</a>
-			<a href="">Test</a>
-			<a href="">Test</a>
-			<a href="">Test</a>
-		</div>
 
-		<div class="footerrække">
-			<a href="">Test</a>
-			<a href="">Test</a>
-			<a href="">Test</a>
-			<a href="">Test</a>
-		</div>
 
-		<div class="footerrække">
-			<a href="">Test</a>
-			<a href="">Test</a>
-			<a href="">Test</a>
-			<a href="">Test</a>
+	<footer>
+		<div class="container footer">
+
+
+			<div class="idapfooter my-4">
+				<div class="footerlogo">
+					<img src="pics/idap-logo-white.png" alt="">
+				</div>
+				<div class="adresse">
+					<p class="text-light">International Divers Against Pollution</p>
+					<p class="text-light">Test Road 24</p>
+					<p class="text-light">2600 Copenhagen</p>
+					<p class="text-light">idap@example.com</p>
+				</div>
+			</div>
+
+			<div class="footerrækker mt-4">
+				<div class="footerrække">
+					<a href="" class="link-light">Lorem Ipsum</a>
+					<a href="" class="link-light">Lorem Ipsum</a>
+					<a href="" class="link-light">Lorem Ipsum</a>
+					<a href="" class="link-light">Lorem Ipsum</a>
+				</div>
+
+				<div class="footerrække">
+					<a href="" class="link-light">Lorem Ipsum</a>
+					<a href="" class="link-light">Lorem Ipsum</a>
+					<a href="" class="link-light">Lorem Ipsum</a>
+					<a href="" class="link-light">Lorem Ipsum</a>
+				</div>
+
+			</div>
+
+			<div class="footernyhed mt-4">
+				<form class="footerinput">
+					<div class="">
+						<input type="text" class="form-control" id="validationDefault01"
+							placeholder="Tilmeld dig vores nyhedsbrev" style="border-radius: 30px;">
+					</div>
+					<div class="">
+						<button class="btn btn-outline-dark pt-1"
+							style="max-height: 38px; border-radius: 30px; border-color: #fff;" type="submit"><img
+								src="pics/mail-1.png" style="width: 100%; max-height: 25px;" alt=""></button>
+					</div>
+				</form>
+			</div>
+
+
+
+
 		</div>
 
 
