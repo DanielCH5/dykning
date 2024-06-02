@@ -30,6 +30,8 @@ $nav-underline-link-active-color: (
 
 .landing{
 	background-image: url(/pics/deepocean1.jpg);
+	// Denne path SKAL VÆRE ÆNDRET PÅ LIVE SERVER til /idap/pics/deepocean1.jpg ellers så loader billedet ikke
+
 	background-size: cover;
 	padding-bottom: 50px;
 	padding-top: 50px;
