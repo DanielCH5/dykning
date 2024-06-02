@@ -20,7 +20,7 @@ $nav-link-color: (
 
 
 $nav-underline-link-active-color: (
-	$primary
+	$dark
 );
 
 @import "bootstrapComponents";
@@ -188,7 +188,7 @@ footer {
 }
 
 
-@include media-breakpoint-up(md) {}
+
 
 @include media-breakpoint-up(lg) {
 	.titler h1 {

@@ -17,85 +17,112 @@
 
 <body>
 
-	<!--Navbar til mobil og media queries sm og ned-->
-	<nav class="mobilnav navbar">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html"><img class="widelogo" src="pics/idap-logo-black.png" alt=""></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-				data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="offcanvas offcanvas-end text-bg-dark navbar-dark" tabindex="-1" id="offcanvasDarkNavbar"
-				aria-labelledby="offcanvasDarkNavbarLabel">
-				<!--Tilføjet "navbar-dark for at gøre linkteksten synlig på mørk baggrund"-->
-				<div class="offcanvas-header">
-					<img class="widelogo" src="pics/idap-logo-white.png" alt="">
-					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-						aria-label="Close"></button>
-				</div>
-				<div class="offcanvas-body">
-					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-						<li class="nav-item">
-							<a class="nav-link" href="bæredygtighed.html">Bæredygtighed</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " aria-current="page"
-								href="samarbejdspartnere.html">Samarbejdspartnere</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-								aria-expanded="false">
-								Kurser
-							</a>
-							<ul class="dropdown-menu dropdown-menu-dark">
-								<li><a class="dropdown-item" href="padi.html">PADI</a></li>
-								<li><a class="dropdown-item" href="#">Ocean Bottle</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">Om IDAP</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
-	<!-- desktopnav -->
-	<nav>
-		<ul class="contentnav nav nav-underline nav-fill align-items-center">
-			<li class="nav-item">
-				<a class="nav-link active" href="index.html"><img class="widelogo" src="pics/idap-logo-black.png" alt=""></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="bæredygtighed.html">Bæredygtighed</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link " href="samarbejdspartnere.html">Samarbejdspartnere</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-					aria-expanded="false">
-					Kurser
-				</a>
-				<ul class="dropdown-menu dropdown-menu-dark">
-					<li><a class="dropdown-item" href="padi.html">PADI</a></li>
-					<li><a class="dropdown-item" href="#">Ocean Bottle</a></li>
-					<li>
-						<hr class="dropdown-divider">
-					</li>
-					<li><a class="dropdown-item" href="#">Something else here</a></li>
-				</ul>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Om IDAP</a>
-			</li>
-		</ul>
-	</nav>
+    <nav class="mobilnav navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="widelogo" src="pics/idap-logo-black.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark navbar-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <!--Tilføjet "navbar-dark for at gøre linkteksten synlig på mørk baggrund"-->
+                <div class="offcanvas-header">
+                    <img class="widelogo" src="pics/idap-logo-white.png" alt="">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Miljøudfordringer
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="plastik.html">Plastik i havet</a></li>
+                                <li><a class="dropdown-item" href="#">Kunstig fodring</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Great Barrier Reef</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".html">Bæredygtighed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page"
+                                href="samarbejdspartnere.html">Samarbejdspartnere</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Kurser
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="padi.html">PADI</a></li>
+                                <li><a class="dropdown-item" href="#">Ocean Bottle</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Om IDAP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- desktopnav -->
+    <nav>
+        <ul class="contentnav nav nav-underline nav-fill align-items-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html"><img class="widelogo" src="pics/idap-logo-black.png" alt=""></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Miljøudfordringer
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="plastik.html">Plastik i havet</a></li>
+                    <li><a class="dropdown-item" href="#">Kunstig fodring</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Great Barrier Reef</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Bæredygtighed</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="samarbejdspartnere.html">Samarbejdspartnere</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Kurser
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="padi.html">PADI</a></li>
+                    <li><a class="dropdown-item" href="#">Ocean Bottle</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Om IDAP</a>
+            </li>
+        </ul>
+    </nav>
 
 
 	<div class="landing">
