@@ -321,13 +321,13 @@ footer {
 
 .contenttekstleft {
 	display: grid;
-	grid-template-rows: 1fr 4fr;
+	grid-template-rows: 11fr 1fr;
 	margin-top: 24px;
 }
 
 .contenttekstright {
 	display: grid;
-	grid-template-rows: 1fr 4fr;
+	grid-template-rows: 11fr 1fr;
 	margin-top: 24px;
 }
 
@@ -343,7 +343,11 @@ footer {
 		padding-left: 50px;
 	}
 }
-
+.tekst{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
 .contentphotos img {
 	width: 100%;
 
