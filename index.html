@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+<!-- Dette er en off-canvas navbar som er stylet i CSS med display:none afhængig af media queries, så den kun viser sig på mobil og forsvinder når str rammer md-->
     <nav class="mobilnav navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img class="widelogo" src="pics/idap-logo-black.png" alt=""></a>
@@ -78,7 +78,7 @@
             </div>
         </div>
     </nav>
-    <!-- desktopnav -->
+    <!-- desktopnav der er lavet media queries til så den kun viser sig efter md -->
     <nav>
         <ul class="contentnav nav nav-underline nav-fill align-items-center">
             <li class="nav-item">
@@ -104,6 +104,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="samarbejdspartnere.html">Samarbejdspartnere</a>
             </li>
+            <!-- dropdown menu -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -124,7 +125,7 @@
         </ul>
     </nav>
 
-
+    <!-- div med photo baggrund og titler + billede foran -->
 	<div class="landing">
 		<div class="landingcontent container">
 			<div class="landingtitler" >
@@ -158,7 +159,7 @@
 	<footer>
 		<div class="container footer">
 
-
+<!-- link-light + text-light gør teksten hvid -->
 			<div class="idapfooter my-4">
 				<div class="footerlogo">
 					<img src="pics/idap-logo-white.png" alt="">
@@ -191,10 +192,12 @@
 			<div class="footernyhed mt-4">
 				<form class="footerinput">
 					<div class="">
+                        <!-- bootstrap input med en border-radius på 30px, samt tilføjer tekst i inputfeltet -->
 						<input type="text" class="form-control" id="validationDefault01"
 							placeholder="Tilmeld dig vores nyhedsbrev" style="border-radius: 30px;">
 					</div>
 					<div class="">
+                        <!-- styler knap og billede i knap -->
 						<button class="btn btn-outline-dark pt-1"
 							style="max-height: 38px; border-radius: 30px; border-color: #fff;" type="submit"><img
 								src="pics/mail-1.png" style="width: 100%; max-height: 25px;" alt=""></button>

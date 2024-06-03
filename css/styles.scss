@@ -4,6 +4,7 @@
 // 2. Include any default variable overrides here
 $link-decoration: none;
 $primary: #004578;
+// ændrer primary til #004578
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -12,7 +13,7 @@ $primary: #004578;
 // 4. Include any default map overrides here
 
 
-
+// ændrer nav-link-color og underline active link color til $dark i stedet
 $nav-link-color: (
 	$dark
 );
@@ -27,7 +28,7 @@ $nav-underline-link-active-color: (
 
 // 5. Du kan lave styling her...
 
-
+// stylet til at have et baggrundsbillede som fylder hele diven
 .landing {
 	background-image: url(/pics/deepocean1.jpg);
 	// Denne path SKAL VÆRE ÆNDRET PÅ LIVE SERVER til /idap/pics/deepocean1.jpg ellers så loader billedet ikke
@@ -45,6 +46,7 @@ $nav-underline-link-active-color: (
 	}
 }
 
+// ændret gridet til at være en enkelt fraction på sm som derefter udvider sig til at tekst + billede fylder hhv. 6fr og 5fr med et enkelt fraction imellem dem når siden når large
 .landingcontent {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -56,6 +58,7 @@ $nav-underline-link-active-color: (
 	}
 }
 
+// inddeling af tekst i rows, samt gør tekst hvid
 .landingtitler {
 	color: white;
 	display: grid;
@@ -65,6 +68,7 @@ $nav-underline-link-active-color: (
 
 }
 
+// tilføjer margins og ændrer font-size på landing page
 .landingtitler h1 {
 	margin-bottom: 50px;
 	font-size: 3.75rem;
@@ -88,11 +92,12 @@ $nav-underline-link-active-color: (
 	}
 }
 
+// Gør så billedet fylder hele diven ud
 .landingbillede img {
 	width: 100%;
 }
 
-
+// Fjerner contentnav når siden er på mobil og tilføjer/fjerner hhv. contentnav og mobilnav, når siden rammer md breakpoint
 .contentnav {
 	display: none;
 }
@@ -108,22 +113,25 @@ $nav-underline-link-active-color: (
 	}
 }
 
+// ændrer footerfarve
 footer {
 	background-color: #004578;
 }
 
+// Inddeler footer i rows
 .footer {
 	display: grid;
 	grid-template-rows: 6fr 4fr;
 }
 
+// Sætter logo + kontaktinfo til at være nederst på mobil ved hjælp af order og inddeler indholdet til at fylde 6col hver
 .idapfooter {
 	display: grid;
 	grid-template-columns: 6fr 6fr;
 	order: 1;
 }
 
-
+// Retter logo + kontakt info til at være 0 i order så det står på linje, samt gør det til en enkelt row og footeren bliver udvidet til at være 3-delet i stedet for 2-delet efter large breakpoint + padding til large breakpoint
 @include media-breakpoint-up(lg) {
 	.footer {
 		grid-template-columns: 4fr 4fr 4fr;
@@ -137,13 +145,13 @@ footer {
 	}
 }
 
-
+// footerrækker ændret til at være 2-delt
 .footerrækker {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
 }
-
+// Individuelle rækker rettet til at være 4 rows der fylder lige meget
 .footerrække {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -153,7 +161,7 @@ footer {
 
 
 
-
+// er ikke længere aktive skal egentlig bare fjernes
 .indhold {
 	width: 100%;
 	height: 100%;
@@ -164,11 +172,11 @@ footer {
 .logo {
 	width: 30px;
 }
-
+// widelogo rettet til 100px i width
 .widelogo {
 	width: 100px;
 }
-
+// img fylder hele div'en og sætter billedet bagerst med z-index
 .photocontainer img {
 	width: 100%;
 	z-index: 0;
@@ -179,7 +187,7 @@ footer {
 		margin-top: 10px;
 	}
 }
-
+// sætter titlen til at have en absolut position, så det ligger foran billedet og bruger flex-box til at centrere titlen samt ændre titlen til hvid
 .contenttitel {
 	position: absolute;
 	display: flex;
@@ -187,7 +195,7 @@ footer {
 	width: 100%;
 	color: #fff;
 }
-
+// gør baggrund hvid
 .contentpages {
 	background-color: #fff;
 
@@ -198,7 +206,7 @@ footer {
 	height: 51px;
 	margin-top: 10px;
 }
-
+// er ikke længere aktive, skal egentlig bare fjernes
 .recycle img {
 	width: 80%;
 }
@@ -208,12 +216,12 @@ footer {
 		padding-top: 100px;
 	}
 }
-
+// gør photonav til grid der fylder en fjerdedel hver
 .photonav {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
+// fjerner div's left and right på mobil, samt fjerner den 5. cirkel scroll-spy på mobil
 .left,
 .right {
 	display: none;
@@ -223,7 +231,7 @@ footer {
 	display: none;
 
 }
-
+// retter photonav'en til i størrelse når breakpoint rammer medium, tilføjer margins i top og bottom, tilføjer div's left and right for at skabe tomme pladser til gridet.
 @include media-breakpoint-up(md) {
 	.photonav {
 
@@ -236,7 +244,7 @@ footer {
 	.right {
 		display: block;
 	}
-
+// tilføjer den 5. scrollspy imagenav når breakpoint rammer medium
 	#newsletter {
 		display: flex;
 	}
@@ -252,14 +260,14 @@ footer {
 	}
 
 }
-
+// gør de individuelle billeder i photonaven til flex, retter den til column og aligner alt i midten
 .imagenav {
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
+// Gør content til at fylde alle 12 cols på siden på mobil, tilføjer column gaps, og udvider margin-bottom på lg breakpoint, samt gør contentet 2-delt.
 .content {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -275,7 +283,7 @@ footer {
 	}
 
 }
-
+// inddeler tekst i rows + tilføjer margin
 .contenttekstleft {
 	display: grid;
 	grid-template-rows: 11fr 1fr;
@@ -287,7 +295,7 @@ footer {
 	grid-template-rows: 11fr 1fr;
 	margin-top: 24px;
 }
-
+// fjerner margin top og tilføjer padding left/right efter breakpointet rammer large
 @include media-breakpoint-up(lg) {
 	.contenttekstleft {
 
@@ -300,7 +308,7 @@ footer {
 		padding-left: 50px;
 	}
 }
-
+// Gør div'en tekst til en flex-column og spreder alt ligeligt ud.
 .tekst {
 	display: flex;
 	flex-direction: column;
@@ -311,7 +319,7 @@ footer {
 	width: 100%;
 
 }
-
+// inddeler div'en knapper i grid-columns og sætter "button" til at starte på grid-column 2 og slutte på grid-column 3, samt styler border-radius'en på knapper.
 .knapper {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
@@ -322,7 +330,7 @@ footer {
 	grid-column-end: 3;
 	border-radius: 30px;
 }
-
+// ændrer på inddelingen i div'en knapper til være venstre-stillet og udvider div'en til at være 6-delt 
 @include media-breakpoint-up(md) {
 	.knapper {
 		grid-template-columns: 2fr 2fr 2fr;
@@ -333,11 +341,11 @@ footer {
 		grid-column-end: 2;
 	}
 }
-
+// Sætter .saveouroceans classen til at være -1, så billedet ligger sig over teksten på mobil.
 .saveouroceans {
 	order: -1;
 }
-
+// Sætter .saveouroceans classen til at være 0, så den retter sig til når breakpoint large er nået.
 @include media-breakpoint-up(lg) {
 	.saveouroceans {
 		order: 0;
@@ -347,7 +355,7 @@ footer {
 .footerlogo img {
 	width: 100%;
 }
-
+// Fjerner nyhedsbrev inputtet i footeren på mobil
 .footerinput {
 	display: none;
 
@@ -356,7 +364,7 @@ footer {
 .footernyhed {
 	display: none;
 }
-
+// Tilføjer padding til div'en footerrækker når den når breakpoint large, samt tilføjer nyhedsbrevsinputtet + knap når breakpoint large er nået. Desuden bliver .inputfooter inddelt så knappen fylder en 1 fraction og selve inputtet fylder 5 fractions.
 
 @include media-breakpoint-up(lg) {
 	.footernyhed {
